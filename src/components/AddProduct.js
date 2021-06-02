@@ -22,11 +22,16 @@ class AddProduct extends Component {
     const { name, price, stock, shortDesc, description } = this.state;
 
     if (name && price) {
-      const id = Math.random().toString(36).substring(2) + Date.now().toString(36);
+      const { user } = this.props.context;
+
       const product = { name, price, stock, shortDesc, description }
       await axios.post(
         'http://localhost:3001/products',
-        {product},
+        {product}, {
+          headers: {
+            authorization: user.token
+          }
+        }
       )
 
       this.props.context.addProduct(
