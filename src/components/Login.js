@@ -6,7 +6,7 @@ class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: "",
+      email_user: "",
       password: ""
     };
   }
@@ -16,11 +16,11 @@ class Login extends Component {
   login = (e) => {
     e.preventDefault();
 
-    const { username, password } = this.state;
-    if (!username || !password) {
+    const { email_user, password } = this.state;
+    if (!email_user || !password) {
       return this.setState({ error: "Fill all fields!" });
     }
-    this.props.context.login(username, password)
+    this.props.context.login(email_user, password)
       .then((loggedIn) => {
         if (!loggedIn) {
           this.setState({ error: "Invalid Credentails" });
@@ -46,7 +46,7 @@ class Login extends Component {
                 <input
                   className="input"
                   type="email"
-                  name="username"
+                  name="email_user"
                   onChange={this.handleChange}
                 />
               </div>
