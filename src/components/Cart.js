@@ -1,10 +1,29 @@
 import React from "react";
 import withContext from "../withContext";
 import CartItem from "./CartItem";
+import { loadStripe } from '@stripe/stripe-js';
+const stripePromise = loadStripe('pk_test_51IyCRZCa2wJHdPnSsdY7TqiIcsCHdz4ewS1RLsRd2XE5uBbl3ExUcqL7ji3ocTW7qcjK6krmxOxghUo2cCXuwg8s00xZaRDK7U');
 
 const Cart = props => {
   const { cart } = props.context;
   const cartKeys = Object.keys(cart || {});
+
+  const handleClick = async (event) => {
+    const stripe = await stripePromise;
+    const response = await fetch('http://localhost:3001/create-checkout-session', { method: 'POST' });
+    const session = await response.json();
+
+    const result = await stripe.redirectToCheckout({
+      sessionId: session.id,
+    });
+
+    if (result.error) {
+      // If `redirectToCheckout` fails due to a browser or network
+      // error, display the localized error message to your customer
+      // using `result.error.message`.
+    }
+  };
+
   return (
     <>
       <div className="hero is-primary">
@@ -34,8 +53,10 @@ const Cart = props => {
                   Clear cart
                 </button>{" "}
                 <button
+                  role="link"
+                  onClick={handleClick}
                   className="button is-success"
-                  onClick={props.context.checkout}
+                  // onClick={props.context.checkout}
                 >
                   Checkout
                 </button>
