@@ -16,6 +16,7 @@ export default class App extends Component {
     this.state = {
       user: null,
       cart: {},
+      selectedProducts: {},
       products: []
     };
     this.routerRef = React.createRef();
@@ -83,6 +84,15 @@ export default class App extends Component {
     this.setState({ cart });
   };
 
+  selectProduct = product => {
+    let selectedProducts = this.state.selectedProducts;
+    selectedProducts[product.type] = product
+
+    localStorage.setItem("selectedProducts", JSON.stringify(selectedProducts));
+    this.setState({ selectedProducts });
+    console.log(this.state)
+  };
+
   removeFromCart = cartItemId => {
     let cart = this.state.cart;
     delete cart[cartItemId];
@@ -129,6 +139,7 @@ export default class App extends Component {
           addToCart: this.addToCart,
           login: this.login,
           addProduct: this.addProduct,
+          selectProduct: this.selectProduct,
           clearCart: this.clearCart,
           checkout: this.checkout
         }}

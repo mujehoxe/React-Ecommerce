@@ -30,6 +30,7 @@
     "stripe": "^8.151.0"
   },
   "scripts": {
+    "start-server": "nodemon server/app.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

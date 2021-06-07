@@ -7,7 +7,8 @@ const initState = {
   name: "",
   price: "",
   stock: "",
-  shortDesc: "",
+  type: "",
+  brand: "",
   description: ""
 };
 
@@ -19,12 +20,12 @@ class AddProduct extends Component {
 
   save = async (e) => {
     e.preventDefault();
-    const { name, price, stock, shortDesc, description } = this.state;
+    const { name, price, stock, type, brand, description } = this.state;
 
     if (name && price) {
       const { user } = this.props.context;
 
-      const product = { name, price, stock, shortDesc, description }
+      const product = { name, price, stock, type, brand, description }
       await axios.post(
         'http://localhost:3001/products',
         {product}, {
@@ -38,9 +39,10 @@ class AddProduct extends Component {
         {
           name,
           price,
-          shortDesc,
+          stock: stock || 0,
+          type,
+          brand,
           description,
-          stock: stock || 0
         },
         () => this.setState(initState)
       );
@@ -58,7 +60,7 @@ class AddProduct extends Component {
   handleChange = e => this.setState({ [e.target.name]: e.target.value, error: "" });
 
   render() {
-    const { name, price, stock, shortDesc, description } = this.state;
+    const { name, price, stock, type, brand, description } = this.state;
     const { user } = this.props.context;
 
     return !(user && user.accessLevel < 1) ? (
@@ -107,13 +109,23 @@ class AddProduct extends Component {
                   onChange={this.handleChange}
                 />
               </div>
-              <div className="field">
-                <label className="label">Short Description: </label>
+              <div className="type">
+                <label className="label">Type: </label>
                 <input
                   className="input"
                   type="text"
-                  name="shortDesc"
-                  value={shortDesc}
+                  name="type"
+                  value={type}
+                  onChange={this.handleChange}
+                />
+              </div>
+              <div className="brand">
+                <label className="label">Brand: </label>
+                <input
+                  className="input"
+                  type="text"
+                  name="brand"
+                  value={brand}
                   onChange={this.handleChange}
                 />
               </div>

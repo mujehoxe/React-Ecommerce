@@ -21,6 +21,7 @@ const ProductList = props => {
                 product={product}
                 key={index}
                 addToCart={props.context.addToCart}
+                selectProduct={props.context.selectProduct}
               />
             ))
           ) : (

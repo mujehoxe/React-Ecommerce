@@ -5,24 +5,34 @@ import { loadStripe } from '@stripe/stripe-js';
 const stripePromise = loadStripe('pk_test_51IyCRZCa2wJHdPnSsdY7TqiIcsCHdz4ewS1RLsRd2XE5uBbl3ExUcqL7ji3ocTW7qcjK6krmxOxghUo2cCXuwg8s00xZaRDK7U');
 
 const Cart = props => {
-  const { cart } = props.context;
-  const cartKeys = Object.keys(cart || {});
+  const { cart } = props.context
+  const cartKeys = Object.keys(cart || {})
 
   const handleClick = async (event) => {
     const stripe = await stripePromise;
-    const response = await fetch('http://localhost:3001/create-checkout-session', { method: 'POST' });
-    const session = await response.json();
+    const response = await fetch(
+      'http://localhost:3001/create-checkout-session',
+      { 
+        method: 'post',
+        headers: {
+          'Accept': 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(cart)
+      }
+    );
+    const session = await response.json()
 
     const result = await stripe.redirectToCheckout({
       sessionId: session.id,
-    });
+    })
 
     if (result.error) {
       // If `redirectToCheckout` fails due to a browser or network
       // error, display the localized error message to your customer
       // using `result.error.message`.
     }
-  };
+  }
 
   return (
     <>
