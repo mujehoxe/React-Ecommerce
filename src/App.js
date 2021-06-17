@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-import { Switch, Route, Link, BrowserRouter as Router } from "react-router-dom";
+import { Switch, Route, Link, useLocation, BrowserRouter as Router } from "react-router-dom";
 import axios from 'axios';
 import jwt_decode from 'jwt-decode';
+
+import Context from "./Context";
 
 import AddProduct from './components/AddProduct';
 import Cart from './components/Cart';
 import Login from './components/Login';
 import ProductList from './components/ProductList';
-
-import Context from "./Context";
+import Build from "./components/Build";
 
 export default class App extends Component {
   constructor(props) {
@@ -25,12 +26,15 @@ export default class App extends Component {
   async componentDidMount() {
     let user = localStorage.getItem("user");
     let cart = localStorage.getItem("cart");
+    let selectedProducts = localStorage.getItem("selected-products");
 
-    const products = await axios.get('http://localhost:3001/products');
-    user = user ? JSON.parse(user) : null;
+    let products = await axios.get('http://localhost:3001/products');
+
+    user = user? JSON.parse(user) : null;
     cart = cart? JSON.parse(cart) : {};
+    selectedProducts = selectedProducts? JSON.parse(selectedProducts) : {};
 
-    this.setState({ user,  products: products.data, cart });
+    this.setState({ user,  products: products.data, cart, selectedProducts });
   }
 
   login = async (email_user, password) => {
@@ -64,6 +68,10 @@ export default class App extends Component {
     localStorage.removeItem("user");
   };
 
+  setProducts = products => {
+    this.setState({ products })
+  }
+
   addProduct = (product, callback) => {
     let products = this.state.products.slice();
     products.push(product);
@@ -86,11 +94,11 @@ export default class App extends Component {
 
   selectProduct = product => {
     let selectedProducts = this.state.selectedProducts;
+    console.log(this.state.selectedProducts)
     selectedProducts[product.type] = product
 
-    localStorage.setItem("selectedProducts", JSON.stringify(selectedProducts));
+    localStorage.setItem("selected-products", JSON.stringify(selectedProducts));
     this.setState({ selectedProducts });
-    console.log(this.state)
   };
 
   removeFromCart = cartItemId => {
@@ -138,6 +146,7 @@ export default class App extends Component {
           removeFromCart: this.removeFromCart,
           addToCart: this.addToCart,
           login: this.login,
+          setProducts: this.setProducts,
           addProduct: this.addProduct,
           selectProduct: this.selectProduct,
           clearCart: this.clearCart,
@@ -189,6 +198,9 @@ export default class App extends Component {
                     { Object.keys(this.state.cart).length }
                   </span>
                 </Link>
+                <Link to="/build" className="navbar-item">
+                  System Builder
+                </Link>
                 {!this.state.user ? (
                   <Link to="/login" className="navbar-item">
                     Login
@@ -206,6 +218,8 @@ export default class App extends Component {
               <Route exact path="/cart" component={Cart} />
               <Route exact path="/add-product" component={AddProduct} />
               <Route exact path="/products" component={ProductList} />
+              <Route exact path="/products/:param" component={ProductList} />
+              <Route exact path="/build" component={Build} />
             </Switch>
           </div>
         </Router>

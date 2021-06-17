@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCRIBUSUTF8NEW Version="1.5.6.1">
+    <DOCUMENT ANZPAGES="9" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="66" BORDERRIGHT="66" BORDERTOP="72" BORDERBOTTOM="96" PRESET="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" ORIENTATION="0" PAGESIZE="Letter" FIRSTNUM="1" BOOK="0" AUTOSPALTEN="1" ABSTSPALTEN="11" UNITS="0" DFONT="Liberation Sans Regular" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" TextDistLeft="0" TextDistRight="0" TextDistBottom="0" TextDistTop="0" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="100" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="1" HCMS="0" DPSo="0" DPSFo="0" DPuse="0" DPgam="0" DPbla="1" DPPr="ISO Coated v2 300% (basICColor)" DPIn="sRGB display profile (ICC v2.2)" DPInCMYK="ISO Coated v2 300% (basICColor)" DPIn2="sRGB display profile (ICC v2.2)" DPIn3="ISO Coated v2 300% (basICColor)" DISc="1" DIIm="0" ALAYER="0" LANGUAGE="en_US" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="0" SnapToGuides="1" SnapToGrid="0" SnapToElement="0" MINGRID="20" MAJGRID="100" SHOWGRID="0" SHOWGUIDES="1" showcolborders="1" SHOWFRAME="1" SHOWControl="0" SHOWLAYERM="0" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWLINK="0" rulerMode="1" showrulers="1" showBleed="1" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.502045814642449" POLYR="0" POLYIR="0" POLYCUR="0" POLYOCUR="0" POLYS="0" arcStartAngle="30" arcSweepAngle="300" spiralStartAngle="0" spiralEndAngle="1080" spiralFactor="1.2" AutoSave="1" AutoSaveTime="600000" AutoSaveCount="1" AutoSaveKeep="0" AUtoSaveInDocDir="1" AutoSaveDir="" ScratchBottom="20" ScratchLeft="100" ScratchRight="100" ScratchTop="20" GapHorizontal="0" GapVertical="40" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="Black" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" CPICT="None" PICTSHADE="100" CSPICT="None" PICTSSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="10" dispY="10" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" renderStack="2 0 4 1 3" GridType="0" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PDF 1.4" calligraphicPenFillColor="Black" calligraphicPenLineColor="Black" calligraphicPenFillColorShade="100" calligraphicPenLineColorShade="100" calligraphicPenLineWidth="1" calligraphicPenAngle="0" calligraphicPenWidth="10" calligraphicPenStyle="1">
+        <CheckProfile Name="PDF 1.3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.5" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.6" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-1a" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="1" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PostScript" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="0" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <COLOR NAME="Black" SPACE="CMYK" C="0" M="0" Y="0" K="100"/>
+        <COLOR NAME="Blue" SPACE="RGB" R="0" G="0" B="255"/>
+        <COLOR NAME="Cool Black" SPACE="CMYK" C="60" M="0" Y="0" K="100"/>
+        <COLOR NAME="Cyan" SPACE="CMYK" C="100" M="0" Y="0" K="0"/>
+        <COLOR NAME="Green" SPACE="RGB" R="0" G="255" B="0"/>
+        <COLOR NAME="Magenta" SPACE="CMYK" C="0" M="100" Y="0" K="0"/>
+        <COLOR NAME="Red" SPACE="RGB" R="255" G="0" B="0"/>
+        <COLOR NAME="Registration" SPACE="CMYK" C="100" M="100" Y="100" K="100" Register="1"/>
+        <COLOR NAME="Rich Black" SPACE="CMYK" C="60" M="40" Y="40" K="100"/>
+        <COLOR NAME="Warm Black" SPACE="CMYK" C="0" M="60" Y="29.8039215686275" K="100"/>
+        <COLOR NAME="White" SPACE="CMYK" C="0" M="0" Y="0" K="0"/>
+        <COLOR NAME="Yellow" SPACE="CMYK" C="0" M="0" Y="100" K="0"/>
+        <HYPHEN/>
+        <STYLE NAME="Default Paragraph Style" DefaultStyle="1" ALIGN="0" DIRECTION="0" LINESPMode="1" LINESP="15" INDENT="0" RMARGIN="0" FIRST="36" VOR="0" NACH="0" ParagraphEffectOffset="0" DROP="0" DROPLIN="2" Bullet="0" Numeration="0" HyphenConsecutiveLines="2" BCOLOR="None" BSHADE="100" FONT="Linux Libertine O Regular" FONTSIZE="14" FONTFEATURES="-clig"/>
+        <STYLE NAME="Section" ALIGN="0" LINESPMode="0" FIRST="0" VOR="128" OpticalMargins="0" LANGUAGE="en_US"/>
+        <STYLE NAME="Bulleted" INDENT="36" FIRST="0" VOR="0" ParagraphEffectOffset="8" ParagraphEffectIndent="1" DROP="0" Bullet="1" BulletStr="»" Numeration="0" LANGUAGE="en_US"/>
+        <STYLE NAME="Bulleted First" PARENT="Bulleted" VOR="8"/>
+        <STYLE NAME="First Paragraph" LINESPMode="1" FIRST="0" VOR="0" FONT="Linux Libertine O Regular" FONTSIZE="14" FONTFEATURES="-clig" LANGUAGE="en_US"/>
+        <STYLE NAME="SubSection" PARENT="First Paragraph" VOR="12"/>
+        <STYLE NAME="Story" LINESPMode="1" INDENT="36" FIRST="0" VOR="6" NACH="6" FONT="Linux Libertine O Italic" FONTSIZE="12" FONTFEATURES="-clig"/>
+        <CHARSTYLE CNAME="Default Character Style" DefaultStyle="1" FONT="Linux Libertine Display O Regular" FONTSIZE="14" FONTFEATURES="-clig" FEATURES="inherit" FCOLOR="Black" FSHADE="100" HyphenWordMin="3" SCOLOR="Black" BGCOLOR="None" BGSHADE="100" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0" KERN="0" LANGUAGE="en_US"/>
+        <CHARSTYLE CNAME="Section" FONT="Linux Libertine O Semibold" FONTSIZE="28" FONTFEATURES="-clig" LANGUAGE="en_US"/>
+        <CHARSTYLE CNAME="Subsection" FONT="Linux Libertine O Semibold" FONTSIZE="18" FONTFEATURES="-clig" LANGUAGE="en_US"/>
+        <TableStyle NAME="Default Table Style" DefaultStyle="1" FillColor="None" FillShade="100">
+            <TableBorderLeft>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderLeft>
+            <TableBorderRight>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderRight>
+            <TableBorderTop>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderTop>
+            <TableBorderBottom>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderBottom>
+        </TableStyle>
+        <CellStyle NAME="Default Cell Style" DefaultStyle="1" FillColor="None" FillShade="100" LeftPadding="1" RightPadding="1" TopPadding="1" BottomPadding="1">
+            <TableBorderLeft>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderLeft>
+            <TableBorderRight>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderRight>
+            <TableBorderTop>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderTop>
+            <TableBorderBottom>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderBottom>
+        </CellStyle>
+        <LAYERS NUMMER="0" LEVEL="0" NAME="Background" SICHTBAR="1" DRUCKEN="1" EDIT="1" SELECT="0" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#000000"/>
+        <Printer firstUse="1" toFile="0" useAltPrintCommand="0" outputSeparations="0" useSpotColors="1" useColor="1" mirrorH="0" mirrorV="0" useICC="0" doGCR="0" doClip="0" setDevParam="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" includePDFMarks="1" PSLevel="3" PrintEngine="3" markLength="20" markOffset="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="File" filename="/home/o/Documents/Document_(recovered)_11_06_2021_14_51.ps" separationName="All" printerCommand=""/>
+        <PDF firstUse="0" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="0" Quality="0" EmbedPDF="0" MirrorH="0" MirrorV="0" Clip="0" rangeSel="0" rangeTxt="" RotateDeg="0" PresentMode="0" RecalcPic="0" FontEmbedding="0" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="sRGB display profile (ICC v2.2)" ImageP="sRGB display profile (ICC v2.2)" PrintP="ISO Coated v2 300% (basICColor)" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="0" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markLength="20" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="0" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" openAfterExport="0" PageLayout="0" openAction="">
+            <Subset Name="Linux Libertine Display O Regular"/>
+            <Subset Name="Linux Libertine O Regular"/>
+            <Subset Name="Linux Libertine O Italic"/>
+            <LPI Color="" Frequency="10" Angle="0" SpotFunction="0"/>
+            <LPI Color="Black" Frequency="133" Angle="45" SpotFunction="3"/>
+            <LPI Color="Cyan" Frequency="133" Angle="105" SpotFunction="3"/>
+            <LPI Color="Magenta" Frequency="133" Angle="75" SpotFunction="3"/>
+            <LPI Color="Yellow" Frequency="133" Angle="90" SpotFunction="3"/>
+        </PDF>
+        <DocItemAttributes/>
+        <TablesOfContents/>
+        <NotesStyles>
+            <notesStyle Name="Default" Start="1" Endnotes="0" Type="Type_1_2_3" Range="0" Prefix="" Suffix=")" AutoHeight="1" AutoWidth="1" AutoRemove="1" AutoWeld="1" SuperNote="1" SuperMaster="1" MarksStyle="" NotesStyle=""/>
+        </NotesStyles>
+        <PageSets>
+            <Set Name="Single Page" FirstPage="0" Rows="1" Columns="1"/>
+            <Set Name="Facing Pages" FirstPage="1" Rows="1" Columns="2">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="3-Fold" FirstPage="0" Rows="1" Columns="3">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="4-Fold" FirstPage="0" Rows="1" Columns="4">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle Left"/>
+                <PageNames Name="Middle Right"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+        </PageSets>
+        <Sections>
+            <Section Number="0" Name="0" From="0" To="8" Type="Type_1_2_3" Start="1" Reversed="0" Active="1" FillChar="0" FieldWidth="0"/>
+        </Sections>
+        <MASTERPAGE PAGEXPOS="100" PAGEYPOS="20" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="66" BORDERRIGHT="66" BORDERTOP="72" BORDERBOTTOM="96" NUM="0" NAM="Normal" MNAM="" Size="Letter" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="20" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="66" BORDERRIGHT="66" BORDERTOP="72" BORDERBOTTOM="96" NUM="0" NAM="" MNAM="Normal" Size="Letter" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="852" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="66" BORDERRIGHT="66" BORDERTOP="72" BORDERBOTTOM="96" NUM="1" NAM="" MNAM="Normal" Size="Letter" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="1684" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="66" BORDERRIGHT="66" BORDERTOP="72" BORDERBOTTOM="96" NUM="2" NAM="" MNAM="Normal" Size="Letter" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="2516" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="66" BORDERRIGHT="66" BORDERTOP="72" BORDERBOTTOM="96" NUM="3" NAM="" MNAM="Normal" Size="Letter" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="3348" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="66" BORDERRIGHT="66" BORDERTOP="72" BORDERBOTTOM="96" NUM="4" NAM="" MNAM="Normal" Size="Letter" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="4180" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="66" BORDERRIGHT="66" BORDERTOP="72" BORDERBOTTOM="96" NUM="5" NAM="" MNAM="Normal" Size="Letter" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="5012" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="66" BORDERRIGHT="66" BORDERTOP="72" BORDERBOTTOM="96" NUM="6" NAM="" MNAM="Normal" Size="Letter" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="5844" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="66" BORDERRIGHT="66" BORDERTOP="72" BORDERBOTTOM="96" NUM="7" NAM="" MNAM="Normal" Size="Letter" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="6676" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="66" BORDERRIGHT="66" BORDERTOP="72" BORDERBOTTOM="96" NUM="8" NAM="" MNAM="Normal" Size="Letter" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGEOBJECT XPOS="166" YPOS="924" OwnPage="1" ItemID="116699827" PTYPE="4" WIDTH="480" HEIGHT="624" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L480 0 L480 624 L0 624 L0 0 Z" copath="M0 0 L480 0 L480 624 L0 624 L0 0 Z" gXpos="166" gYpos="924" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="126149747" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle LINESPMode="1" FONT="Linux Libertine O Regular" FONTSIZE="14"/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CPARENT="Section" FONT="Linux Libertine Display O Regular" CH="Introduction"/>
+                <para PARENT="Section"/>
+                <ITEXT CPARENT="Subsection" FONT="Linux Libertine Display O Regular" CH="Description"/>
+                <para PARENT="SubSection"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" FONTSIZE="14" CH="Technology has become an essential part of our lives, helping people in their daily tasks. In this document, we present a solution to bring technology closer to them, by offering an online store specifically geared towards selling hardware and computer parts, targeting a wide range of customers with distinct sets of orientations and expertise."/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" FONTSIZE="14" CH="In this document we will describe the different parts related to this project, and the outcome that will be presented to the end customer. It is intended to be read from those responsible for developing the system, from managers to systems engineers, architects, investors and also employees, so that they realize what the features of the system are and the requirements that needs to be met in order for the system to be able to deliver its desirable results."/>
+                <para LINESPMode="1"/>
+                <ITEXT CPARENT="Subsection" FONT="Linux Libertine Display O Regular" CH="Purpose"/>
+                <para PARENT="SubSection"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" FONTSIZE="14" CH="This project will goal is to help companies, vendors, manufacturers and other types of providers to market their products. Focus on helping customers choose merchandise that is relevant to them, making these merchandise sell faster and reach the audience for which they are made."/>
+                <breakframe/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT CPARENT="Section" FONT="Linux Libertine Display O Regular" CH="Overall Description"/>
+                <para PARENT="Section"/>
+                <ITEXT CPARENT="Subsection" FONT="Linux Libertine Display O Regular" CH="Environment and Context"/>
+                <para PARENT="SubSection"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" FONTSIZE="14" CH="This project can operate under a web environment or as a mobile application. interacting with users from either platforms by adopting a client-server architecture. collecting inquiries from the client, sending them to the servers, and responding with the appropriate results. the project will also work within an e-commerce context, offering high tech devices and hardware provided by acquirers to any potential client, which can be any person living in our century."/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT CPARENT="Subsection" FONT="Linux Libertine Display O Regular" CH="Classes and Characteristics"/>
+                <para PARENT="SubSection"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" FONTSIZE="14" CH="The system can interact with several types of clients, whether within a professional setting or with those simple clients who are only seeking entertainment."/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" FONTSIZE="14" CH="The system main functionalities are:"/>
+                <para LINESPMode="1"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" FONTSIZE="14" CH="Allowing customers to navigate through the products and choosing which ones to pick and buy."/>
+                <para PARENT="Bulleted First"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" FONTSIZE="14" CH="Allowing employ"/>
+                <ITEXT CH="e"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" FONTSIZE="14" CH="es to insert new product and modify their details."/>
+                <para PARENT="Bulleted"/>
+                <ITEXT CPARENT="Subsection" FONT="Linux Libertine Display O Regular" CH="Limitations"/>
+                <para PARENT="SubSection"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="This project will not allow users to sell their own items on the platform, since it is only aimed at selling the products offered by the acquirers of the project."/>
+                <breakframe/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT CPARENT="Section" FONT="Linux Libertine Display O Regular" CH="System Features"/>
+                <para PARENT="Section"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="For our system to be any usable, it must have a number of features, from those we pick the following:"/>
+                <para LINESPMode="1"/>
+                <ITEXT CPARENT="Subsection" FONT="Linux Libertine Display O Regular" CH="Display the list of products"/>
+                <para PARENT="SubSection"/>
+                <ITEXT CH="Scenario"/>
+                <breakline/>
+                <ITEXT CH="As a customer, i should be able to see the list of product when i first encounter the site, so i can know what types of products are being sold."/>
+                <para PARENT="Story"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="The most meaningful data that our clients are concerned about are the list of products, and in order for our system to be useful to our clients it has to display this list in a simple and clear way for users to interact with it. And because of the high priority of this feature we chose to display our products in the home page, to make it easier for them to find it."/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" FONTSIZE="14" CH="Our system has to have some mechanism to store this data, it needs also to be able to transfer the data and render it for the client."/>
+                <para LINESPMode="1"/>
+                <ITEXT CPARENT="Subsection" FONT="Linux Libertine Display O Regular" CH="Search for products"/>
+                <para PARENT="SubSection"/>
+                <ITEXT CH="Scenario"/>
+                <breakline/>
+                <ITEXT CH="As a customer, i want be able to search for products, so i can find items that interests me much more quickly."/>
+                <para PARENT="Story"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="It is true that this feature have less priority then the first one, but it can be the most useful one for any online store with a massive collection of products. Thus it is essential for our system to have some search utility to facilitate navigation within this large set, and provide only what the user is interested in at the moment."/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" FONTSIZE="14" CH="The system needs to expose some sort of interface for interacting with the data store, one which provides the right functionalities for extracting the right information for the supplied query. The system should also be able to handle different types of queries such as finding a product by its name and/or its type."/>
+                <para LINESPMode="1"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" FONTSIZE="14" CH="Since this feature is very handy for our users it has to be accessible and noticeable for them. This feature is also closely related to the list of products being shown. Which makes the only reasonable location to place our search element is the home page above the list of products."/>
+                <para LINESPMode="1"/>
+                <ITEXT CPARENT="Subsection" FONT="Linux Libertine Display O Regular" CH="Subscribe on the waiting list of a product"/>
+                <para PARENT="SubSection"/>
+                <ITEXT CH="Scenario"/>
+                <breakline/>
+                <ITEXT CH="As a merchant, I would like my customers to be able to subscribe to a product if it is not available at the moment, so that they are informed as soon as possible."/>
+                <para PARENT="Story"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="The business force us to find the fastest ways for selling our products, one of these is giving the possibility for customers to register in the waiting list of a product if none of it is left inventory. And as soon as the product is available the user should be informed. This would also be beneficial for users since it exempt them from asking over and over for an item."/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" FONTSIZE="14" CH="A way for this feature to be presented to clients might be by displaying the product that is out of stock with a button saying &quot;subscribe&quot; which will add the actual user to the waiting list of the particular product."/>
+                <para LINESPMode="1"/>
+                <para LINESPMode="1"/>
+                <ITEXT CPARENT="Subsection" FONT="Linux Libertine Display O Regular" CH="Product Returns"/>
+                <para PARENT="SubSection"/>
+                <ITEXT CH="Story"/>
+                <breakline/>
+                <ITEXT CH="As an equipment manager, i would like to have the possibility of returning  the hardware that i bought, so in case it did not fit our team appropriately, it won't be a big problem."/>
+                <para PARENT="Story"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="Offering our users the possibility of returning a product will give them confidence and to simplify their decision making about taking a product or leaving it. And the policies for which the business manages the returns can determine its success."/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" FONTSIZE="14" CH="Realizing such feature will require our system to have a special return code for each item, then the user have to supply this code in a page that is devoted for the task. We also need to check weather the user has bought the item in the first place."/>
+                <para LINESPMode="1"/>
+                <ITEXT CPARENT="Subsection" FONT="Linux Libertine Display O Regular" CH="The Cart"/>
+                <para PARENT="SubSection"/>
+                <ITEXT CH="Scenario"/>
+                <breakline/>
+                <ITEXT CH="As a shopper, i want to choose a number of items to put in a cart, and then be able to check them all out at once."/>
+                <para PARENT="Story"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="Asking a customer to pick an item, check it out, and then pick another over again would be inconvenient for him. Providing a cart in our store would be essential for our store. For each product we would add a button &quot;add to cart&quot; which allows the user to easily add products and continue their shopping."/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" FONTSIZE="14" CH="We also want our user to be able to view his cart at all times, so we can put the cart on its own page with a navigation link to it. or as a side popup makes it even more appropriate for them. Also we would put the option to remove an item in case our client is no longer interested in it."/>
+                <para LINESPMode="1"/>
+                <ITEXT CPARENT="Subsection" FONT="Linux Libertine Display O Regular" CH="The Checkout"/>
+                <para PARENT="SubSection"/>
+                <ITEXT CH="Story"/>
+                <breakline/>
+                <ITEXT CH="My name is bob, i am an author, and when it comes to paying for my purchases i want the system to offer different payment methods, and accept cards from different banks."/>
+                <para PARENT="Story"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="Complying to this need would require from the system to interact with distinct types of financial service providers, and it would not be a simple task for our developers due to the variety in infrastructure between these systems. Also payment can be a sensitive operation because it requires users personal and financial informations. Since these issues and more has already been resolved, and constantly being considered and optimized by specialized parties, we are going to use an already established solution. Stripe is a service that offers payment processing software and application programming interfaces for e-commerce websites and mobile applications."/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" FONTSIZE="14" CH="When a user finishes his shopping he is going to checkout his items which will redirect him to Stripe's payment page where he will be able to enter his card's information and proceed the transaction, he also will be able to cancel without loosing the items on his cart. If the payment was successful he will be redirected to the site with a message informing him of the next steps to receive his items."/>
+                <para LINESPMode="1"/>
+                <ITEXT CPARENT="Subsection" FONT="Linux Libertine Display O Regular" CH="User Profiles"/>
+                <para PARENT="SubSection"/>
+                <ITEXT CH="Story"/>
+                <breakline/>
+                <ITEXT CH="As a data scientist, i would like to view those computer parts that are manufactured specifically for my domain."/>
+                <para PARENT="Story"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="Having information about the user can be beneficial for him since it gives the possibility for the system to offer products that are relevant to him, based on his interests or the history of his purchases. and this will help him decide future ones."/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" FONTSIZE="14" CH="In case the user wants to, he can head to the login/registration page, where he can fill out a form with his information and then will be redirected to the products page. the user should also be able to put his address and payment methods to simplify his future payments."/>
+                <para LINESPMode="1"/>
+                <ITEXT CPARENT="Subsection" FONT="Linux Libertine Display O Regular" CH="The system builder"/>
+                <para PARENT="SubSection"/>
+                <ITEXT CH="Story"/>
+                <breakline/>
+                <ITEXT CH="Hello it is Mark, and i am a YouTube gamer. I always need the most efficient pieces of hardware, so i would like to have a feature to help me find thoes pieces quickly and combine them together and see which of those are compatible with what i already have."/>
+                <para PARENT="Story"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="Introducing this feature to help diffrent types of custemers setup hardware configurations according to their needs and the tasks that they perform. We provide a dedicated page that enables the user to select his desired components, and report back with the compatibility resu"/>
+                <ITEXT CH="l"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="t."/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT CPARENT="Subsection" FONT="Linux Libertine Display O Regular" CH="Product management"/>
+                <para PARENT="SubSection"/>
+                <ITEXT CH="Senario"/>
+                <breakline/>
+                <ITEXT CH="As an ecommerce products manager, i would like to have an interface that is clean and easy to use, so i can do my work as quick and efficent as possible."/>
+                <para PARENT="Story"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="So many hardware parts are manufactured every day, so for our employees to be more productive, we provide them with a form for insert"/>
+                <ITEXT CH="i"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="ng new products details. We also put a buttons into each item to simplify their modification or removal."/>
+                <breakframe/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT CPARENT="Section" FONT="Linux Libertine Display O Regular" CH="Other Nonfunctional Requirements"/>
+                <para PARENT="Section"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="Our online store might be useable with the set of functional features introduced, but for it to attract any large attention and be successful it has to offer a lot more than that. By featuring some quality aspects and user experience characteristics. These must obtain big investments both both financially and time wise, in order for clients to remain satisfied."/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT CPARENT="Subsection" FONT="Linux Libertine Display O Regular" CH="Performance Requirements"/>
+                <para PARENT="SubSection"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="The demand for e-commerce platforms is very high these days, and they are the systems under the most pressure. The pressure might also vary depending on the sircumstances, such as special ocasions like holidays or even the release of a new version of some famous product. That is the reason why they require a lot of attention when it comes to performance and scalability, The implementation of such systems requires from developers to follow the best practices under the subject, managers may assign specialized engineers for this task."/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT CPARENT="Subsection" FONT="Linux Libertine Display O Regular" CH="Security Requirements"/>
+                <para PARENT="SubSection"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="In order to gain new customers we have to first gain their trust. And as stated earlier, having sensitive information about users could open up the door for an entire range of threats, so it is the responsibility of the project managers to protect the system from any potentile attaks by always cheking for vulnerabilities and fixing them."/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT CPARENT="Subsection" FONT="Linux Libertine Display O Regular" CH="Software Quality Attributes"/>
+                <para PARENT="SubSection"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="Interacting with some large groups of audiences, coming from all sorts of backgrounds, requires having a clear, concise and well structured user interface. and with the wide variety of devices these days, the interface should look consistent throughout this whole range of devices. It is advisable to construct the ui as single page applications, since it is the trend in recent years in similar kinds of projects."/>
+                <para PARENT="First Paragraph"/>
+                <ITEXT FONT="Linux Libertine Display O Regular" CH="Search Engine Optimization, can help you attract new customers. SEO is what help a web page rank at the top of search engine results when people search for a product or service related to the field."/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="166" YPOS="1756" OwnPage="2" ItemID="126149747" PTYPE="4" WIDTH="480" HEIGHT="624" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L480 0 L480 624 L0 624 L0 0 Z" copath="M0 0 L480 0 L480 624 L0 624 L0 0 Z" gXpos="166" gYpos="1756" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="126142307" BACKITEM="116699827"/>
+        <PAGEOBJECT XPOS="166" YPOS="2588" OwnPage="3" ItemID="126142307" PTYPE="4" WIDTH="480" HEIGHT="624" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L480 0 L480 624 L0 624 L0 0 Z" copath="M0 0 L480 0 L480 624 L0 624 L0 0 Z" gXpos="166" gYpos="2588" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="128450307" BACKITEM="126149747"/>
+        <PAGEOBJECT XPOS="166" YPOS="3420" OwnPage="4" ItemID="128450307" PTYPE="4" WIDTH="480" HEIGHT="624" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L480 0 L480 624 L0 624 L0 0 Z" copath="M0 0 L480 0 L480 624 L0 624 L0 0 Z" gXpos="166" gYpos="3420" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="116043555" BACKITEM="126142307"/>
+        <PAGEOBJECT XPOS="166" YPOS="4252" OwnPage="5" ItemID="116043555" PTYPE="4" WIDTH="480" HEIGHT="624" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L480 0 L480 624 L0 624 L0 0 Z" copath="M0 0 L480 0 L480 624 L0 624 L0 0 Z" gXpos="166" gYpos="4252" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="140848755" BACKITEM="128450307"/>
+        <PAGEOBJECT XPOS="166" YPOS="5084" OwnPage="6" ItemID="140848755" PTYPE="4" WIDTH="480" HEIGHT="624" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L480 0 L480 624 L0 624 L0 0 Z" copath="M0 0 L480 0 L480 624 L0 624 L0 0 Z" gXpos="166" gYpos="5084" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="142210803" BACKITEM="116043555"/>
+        <PAGEOBJECT XPOS="166" YPOS="220" OwnPage="0" ItemID="159128371" PTYPE="4" WIDTH="480" HEIGHT="141" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L480 0 L480 141 L0 141 L0 0 Z" copath="M0 0 L480 0 L480 141 L0 141 L0 0 Z" gXpos="166" gYpos="220" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle LINESPMode="2" FONTSIZE="36"/>
+                <ITEXT FONT="Linux Libertine O Regular" FONTSIZE="48" CH="Hi-Tech Store"/>
+                <para ALIGN="2" LINESPMode="2"/>
+                <ITEXT FONT="Linux Libertine O Regular" FONTSIZE="36" CH="Software Requirements Specification"/>
+                <trail ALIGN="2"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="166" YPOS="5916" OwnPage="7" ItemID="142210803" PTYPE="4" WIDTH="480" HEIGHT="624" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L480 0 L480 624 L0 624 L0 0 Z" copath="M0 0 L480 0 L480 624 L0 624 L0 0 Z" gXpos="166" gYpos="5916" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="153571331" BACKITEM="140848755"/>
+        <PAGEOBJECT XPOS="166" YPOS="527" OwnPage="0" ItemID="175517347" PTYPE="4" WIDTH="480" HEIGHT="43" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L480 0 L480 43 L0 43 L0 0 Z" copath="M0 0 L480 0 L480 43 L0 43 L0 0 Z" gXpos="166" gYpos="527" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Linux Libertine O Regular" FONTSIZE="24" CH="Author"/>
+                <breakline/>
+                <ITEXT FONT="Linux Libertine O Regular" FONTSIZE="28" CH="Gaham Oussama"/>
+                <trail ALIGN="1" DIRECTION="0" LINESPMode="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="166" YPOS="6748" OwnPage="8" ItemID="153571331" PTYPE="4" WIDTH="480" HEIGHT="624" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L480 0 L480 624 L0 624 L0 0 Z" copath="M0 0 L480 0 L480 624 L0 624 L0 0 Z" gXpos="166" gYpos="6748" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="142210803"/>
+    </DOCUMENT>
+</SCRIBUSUTF8NEW>

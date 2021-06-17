@@ -3,8 +3,15 @@ const app = express();
 const cors = require('cors')
 
 app.use(express.urlencoded({ extended: true }))
-app.use(express.json())
 app.use(cors())
+
+app.use((req, res, next) => {
+    if (req.originalUrl === '/webhook') {
+      next();
+    } else {
+      express.json()(req, res, next);
+    }
+});
 
 const initializeDb = require('./db.js')
 

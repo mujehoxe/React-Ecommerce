@@ -8,7 +8,7 @@ const Cart = props => {
   const { cart } = props.context
   const cartKeys = Object.keys(cart || {})
 
-  const handleClick = async (event) => {
+  const handleCheckoutClick = async (event) => {
     const stripe = await stripePromise;
     const response = await fetch(
       'http://localhost:3001/create-checkout-session',
@@ -64,7 +64,7 @@ const Cart = props => {
                 </button>{" "}
                 <button
                   role="link"
-                  onClick={handleClick}
+                  onClick={handleCheckoutClick}
                   className="button is-success"
                   // onClick={props.context.checkout}
                 >

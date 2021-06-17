@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.20.0",
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
     "bulma": "^0.9.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
@@ -30,7 +31,7 @@
     "stripe": "^8.151.0"
   },
   "scripts": {
-    "start-server": "nodemon server/app.js",
+    "start-server": "nodemon --watch server server/app.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

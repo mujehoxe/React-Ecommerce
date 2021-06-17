@@ -1,9 +1,26 @@
 import React from "react";
-import ProductItem from "./ProductItem";
+
 import withContext from "../withContext";
 
+import ProductItem from "./ProductItem";
+import Search from "./Search";
+
 const ProductList = props => {
-  const { products } = props.context;
+  const { products, setProducts } = props.context;
+
+  const handleSearch = async searchQuery => {
+    let params = {
+      "text": searchQuery,
+    };
+    
+    let query = Object.keys(params)
+    .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(params[k]))
+    .join('&');
+
+    const response = await fetch('http://localhost:3001/search?' + query)
+    const products = await response.json()
+    setProducts(products)
+  }
 
   return (
     <>
@@ -13,6 +30,10 @@ const ProductList = props => {
         </div>
       </div>
       <br />
+
+      <Search handleSearch={handleSearch}/>
+      <br />
+      
       <div className="container">
         <div className="column columns is-multiline">
           {products && products.length ? (

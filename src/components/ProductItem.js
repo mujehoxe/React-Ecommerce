@@ -1,8 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 
 const ProductItem = props => {
   const { product } = props;
+  const [ checked, setChecked ] = useState(false);
 
+  const handleCheckChange = () => {
+    setChecked(!checked)
+    props.selectProduct(product)
+  }
+  
   return (
     <div className=" column is-half">
       <div className="box">
@@ -10,9 +16,10 @@ const ProductItem = props => {
           
           <div className="media-left" style={{display: 'flex'}}>
             <input 
-              type='checkbox' 
+              type='checkbox'
+              checked={checked}
               style={{margin: '.5em', alignSelf: 'center'}}
-              onChange={() => props.selectProduct(product)}
+              onChange={handleCheckChange}
             />
             <figure className="image is-64x64">
               <img

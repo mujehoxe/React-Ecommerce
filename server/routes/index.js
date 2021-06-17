@@ -18,6 +18,10 @@ const crypto = require("crypto");
 
 const jwt = require("jsonwebtoken");
 
+const express = require('express');
+
+const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
+
 require("dotenv").config();
 
 const stripe = require("stripe")(process.env.SECRET_KEY);
@@ -85,14 +89,26 @@ module.exports = function (app, db) {
 	});
 
 	app.get("/products", (req, res) => {
-		const cursor = db
-			.collection("product")
-			.find()
-			.toArray()
-			.then((result) => {
-				res.send(result);
-			});
+		db.collection("product")
+		.find()
+		.toArray()
+		.then((result) => {
+			res.send(result);
+		});
 	});
+
+	app.get("/search", (req, res) => {
+		if(!req.query.text && res.sendStatus(400))
+			return
+		searchText = '"' + req.query.text.split(" ").join('" "') + '"';
+		const query = { $text: { $search: searchText } };
+		db.collection("product")
+		.find(query)
+		.toArray()
+		.then((result) => {
+			res.send(result);
+		})
+	})
 
 	app.post(
 		"/products",
@@ -311,13 +327,26 @@ module.exports = function (app, db) {
 		});
 		res.json({ id: session.id });
 	});
+	
+	app.post('/webhook', express.raw({type: 'application/json'}), (req, res) => {
+		const sig = req.headers['stripe-signature'];
+	
+		let event;
+	
+		try {
+			event = stripe.webhooks.constructEvent(req.body, sig, process.env.STRIPE_WEBHOOK_SECRET);
+		} catch (err) {
+			console.log(err);
+			return res.status(400).send(`Webhook Error: ${err.message}`);
+		}
+	
+		console.log(event)
 
-	app.get("/order/success", async (req, res) => {
-		const session = await stripe.checkout.sessions.retrieve(
-			req.query.session_id
-		);
-		const customer = await stripe.customers.retrieve(session.customer);
-		res.redirect("http://localhost:3000");
+		if (event.type === 'checkout.session.completed') {
+			AddPurchaseToHistory(event);
+		}
+
+		response.status(200);
 	});
 
 	return app;
@@ -360,4 +389,9 @@ function authenticateToken(req, res, next) {
 function authorizeAdmin(req, res, next) {
 	if (req.user.role != "admin") return res.sendStatus(403);
 	next();
+}
+
+const AddPurchaseToHistory = (event) => {
+	// TODO: fill me in
+	console.log("Fulfilling order", event);
 }
