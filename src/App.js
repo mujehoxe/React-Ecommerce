@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Switch, Route, Link, useLocation, BrowserRouter as Router } from "react-router-dom";
+import { Switch, Route, Link, BrowserRouter as Router } from "react-router-dom";
 import axios from 'axios';
 import jwt_decode from 'jwt-decode';
 
@@ -28,13 +28,11 @@ export default class App extends Component {
     let cart = localStorage.getItem("cart");
     let selectedProducts = localStorage.getItem("selected-products");
 
-    let products = await axios.get('http://localhost:3001/products');
-
     user = user? JSON.parse(user) : null;
     cart = cart? JSON.parse(cart) : {};
     selectedProducts = selectedProducts? JSON.parse(selectedProducts) : {};
 
-    this.setState({ user,  products: products.data, cart, selectedProducts });
+    this.setState({ user, cart, selectedProducts });
   }
 
   login = async (email_user, password) => {
@@ -94,7 +92,6 @@ export default class App extends Component {
 
   selectProduct = product => {
     let selectedProducts = this.state.selectedProducts;
-    console.log(this.state.selectedProducts)
     selectedProducts[product.type] = product
 
     localStorage.setItem("selected-products", JSON.stringify(selectedProducts));
@@ -161,7 +158,7 @@ export default class App extends Component {
             aria-label="main navigation"
           >
             <div className="navbar-brand">
-              <b className="navbar-item is-size-4 ">ecommerce</b>
+              <b className="navbar-item is-size-4 ">Hi-Tech</b>
               <label
                 role="button"
                 className="navbar-burger burger"
@@ -212,13 +209,13 @@ export default class App extends Component {
                 )}
               </div>
             </nav>
-            <Switch>
+            <Switch> 
               <Route exact path="/" component={ProductList} />
+              <Route exact path="/search" component={ProductList} />
+              <Route exact path="/products" component={ProductList} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/cart" component={Cart} />
               <Route exact path="/add-product" component={AddProduct} />
-              <Route exact path="/products" component={ProductList} />
-              <Route exact path="/products/:param" component={ProductList} />
               <Route exact path="/build" component={Build} />
             </Switch>
           </div>

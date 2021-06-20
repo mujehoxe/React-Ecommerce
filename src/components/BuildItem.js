@@ -2,6 +2,7 @@ import React from "react";
 
 const BuildItem = props => {
   const { product } = props;
+  console.log(props)
 
   return (
     <div className=" column is-half">
@@ -9,7 +10,7 @@ const BuildItem = props => {
         <div className="media-left">
           <figure className="image is-48x48">
             <img
-              src="https://bulma.io/images/placeholders/64x64.png"
+              src="https://bulma.io/images/placeholders/48x48.png"
               alt={product.shortDesc}
             />
           </figure>

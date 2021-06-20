@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 import withContext from "../withContext";
 
@@ -8,16 +9,12 @@ import Search from "./Search";
 const ProductList = props => {
   const { products, setProducts } = props.context;
 
-  const handleSearch = async searchQuery => {
-    let params = {
-      "text": searchQuery,
-    };
-    
-    let query = Object.keys(params)
-    .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(params[k]))
-    .join('&');
+	let history = useHistory();
 
-    const response = await fetch('http://localhost:3001/search?' + query)
+  const handleSearch = async (query) => {
+    if(query)
+      history.push(`search${query}`)
+    const response = await fetch(`http://localhost:3001/search${query}`)
     const products = await response.json()
     setProducts(products)
   }
@@ -31,7 +28,7 @@ const ProductList = props => {
       </div>
       <br />
 
-      <Search handleSearch={handleSearch}/>
+      <Search handleSearch={handleSearch} location={props.location}/>
       <br />
       
       <div className="container">

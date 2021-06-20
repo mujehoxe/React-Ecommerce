@@ -97,23 +97,26 @@ module.exports = function (app, db) {
 		});
 	});
 
-	app.get("/search", (req, res) => {
-		if(!req.query.text && res.sendStatus(400))
-			return
-		searchText = '"' + req.query.text.split(" ").join('" "') + '"';
-		const query = { $text: { $search: searchText } };
-		db.collection("product")
-		.find(query)
-		.toArray()
+	app.get("/search", (req, res) => {	
+		const query = {}
+
+		
+		if(req.query.type) query.type = req.query.type
+		
+		if(req.query.text)
+			query.$text = { $search: req.query.text }
+
+		const products = db.collection("product").find(query)
+		
+		if(req.query.text)
+			products.sort( { score: { $meta: "textScore" } } )
+		products.toArray()
 		.then((result) => {
 			res.send(result);
 		})
 	})
 
-	app.post(
-		"/products",
-		authenticateToken,
-		authorizeAdmin,
+	app.post("/products", authenticateToken, authorizeAdmin,
 		async (req, res) => {
 			const product = req.body;
 			try {
