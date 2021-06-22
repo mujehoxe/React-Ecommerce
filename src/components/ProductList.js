@@ -7,7 +7,7 @@ import ProductItem from "./ProductItem";
 import Search from "./Search";
 
 const ProductList = props => {
-  const { products, setProducts } = props.context;
+  const { products, setProducts, setSelectedProducts } = props.context;
 
 	let history = useHistory();
 
@@ -17,6 +17,11 @@ const ProductList = props => {
     const response = await fetch(`http://localhost:3001/search${query}`)
     const products = await response.json()
     setProducts(products)
+  }
+
+  const selectProduct = (index) => {
+    const product = {...products[index]}
+    setSelectedProducts(product)
   }
 
   return (
@@ -38,8 +43,9 @@ const ProductList = props => {
               <ProductItem
                 product={product}
                 key={index}
+                index={index}
                 addToCart={props.context.addToCart}
-                selectProduct={props.context.selectProduct}
+                selectProduct={selectProduct}
               />
             ))
           ) : (

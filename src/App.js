@@ -10,6 +10,8 @@ import Cart from './components/Cart';
 import Login from './components/Login';
 import ProductList from './components/ProductList';
 import Build from "./components/Build";
+import SuccessfulPayment from "./components/SuccessfulPayment";
+
 
 export default class App extends Component {
   constructor(props) {
@@ -90,7 +92,7 @@ export default class App extends Component {
     this.setState({ cart });
   };
 
-  selectProduct = product => {
+  setSelectedProducts = product => {
     let selectedProducts = this.state.selectedProducts;
     selectedProducts[product.type] = product
 
@@ -145,7 +147,7 @@ export default class App extends Component {
           login: this.login,
           setProducts: this.setProducts,
           addProduct: this.addProduct,
-          selectProduct: this.selectProduct,
+          setSelectedProducts: this.setSelectedProducts,
           clearCart: this.clearCart,
           checkout: this.checkout
         }}
@@ -158,7 +160,9 @@ export default class App extends Component {
             aria-label="main navigation"
           >
             <div className="navbar-brand">
-              <b className="navbar-item is-size-4 ">Hi-Tech</b>
+              <Link to="/">
+                <b className="navbar-item is-size-4">Hi-Tech</b>
+              </Link>
               <label
                 role="button"
                 className="navbar-burger burger"
@@ -181,23 +185,26 @@ export default class App extends Component {
                 <Link to="/products" className="navbar-item">
                   Products
                 </Link>
-                {this.state.user && this.state.user.accessLevel < 1 && (
+                {(this.state.user && this.state.user.accessLevel < 1) ? (
                   <Link to="/add-product" className="navbar-item">
                     Add Product
                   </Link>
+                ) : (
+                  <>
+                    <Link to="/cart" className="navbar-item">
+                      Cart
+                      <span
+                        className="tag is-primary"
+                        style={{ marginLeft: "5px" }}
+                      >
+                        { Object.keys(this.state.cart).length }
+                      </span>
+                    </Link>
+                    <Link to="/build" className="navbar-item">
+                      System Builder
+                    </Link>
+                  </>
                 )}
-                <Link to="/cart" className="navbar-item">
-                  Cart
-                  <span
-                    className="tag is-primary"
-                    style={{ marginLeft: "5px" }}
-                  >
-                    { Object.keys(this.state.cart).length }
-                  </span>
-                </Link>
-                <Link to="/build" className="navbar-item">
-                  System Builder
-                </Link>
                 {!this.state.user ? (
                   <Link to="/login" className="navbar-item">
                     Login
@@ -217,6 +224,7 @@ export default class App extends Component {
               <Route exact path="/cart" component={Cart} />
               <Route exact path="/add-product" component={AddProduct} />
               <Route exact path="/build" component={Build} />
+              <Route exact path="/order/success" component={SuccessfulPayment} />
             </Switch>
           </div>
         </Router>

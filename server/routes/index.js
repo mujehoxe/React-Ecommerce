@@ -118,7 +118,7 @@ module.exports = function (app, db) {
 
 	app.post("/products", authenticateToken, authorizeAdmin,
 		async (req, res) => {
-			const product = req.body;
+			const product = req.body.product;
 			try {
 				await db.collection("product").insertOne(product);
 				res.sendStatus(201).json();
@@ -162,7 +162,8 @@ module.exports = function (app, db) {
 		const { email_user, password } = req.body;
 
 		db.collection("user")
-			.findOne({ $or: [{ email: email_user }, { username: email_user }] })
+			.findOne(
+				{ $or: [{ email: email_user }, { username: email_user }] })
 			.then((result) => {
 				const user = result;
 
@@ -188,137 +189,6 @@ module.exports = function (app, db) {
 			});
 	});
 
-	app.get("/auth/google", (req, res) => {
-		const oauthClient = new google.auth.OAuth2(
-			"374495845688-8ra0nksfosq5s6p91kj7pe40arass74p.apps.googleusercontent.com",
-			"LSE0vXnUaV7_NjTCjnZ6rXJq",
-			"http://127.0.0.1:3000/auth/google/callback"
-		);
-		const scopes = [
-			"https://www.googleapis.com/auth/userinfo.profile",
-			"https://www.googleapis.com/auth/userinfo.email",
-			"openid",
-		];
-
-		const url = oauthClient.generateAuthUrl({
-			access_type: "offline",
-			scope: scopes,
-			state: JSON.stringify({
-				callbackUrl: req.body.callbackUrl,
-				userId: req.body.userid,
-			}),
-		});
-		res.redirect(302, url);
-	});
-
-	app.get("/auth/google/callback", async (req, res) => {
-		const code = req.query.code;
-
-		const oauthClient = new google.auth.OAuth2(
-			"374495845688-8ra0nksfosq5s6p91kj7pe40arass74p.apps.googleusercontent.com",
-			"LSE0vXnUaV7_NjTCjnZ6rXJq",
-			"http://127.0.0.1:3000/auth/google/callback"
-		);
-		const response = await oauthClient.getToken(code);
-		const { tokens } = response;
-		const token = tokens.id_token.split(".");
-		const data = JSON.parse(Buffer.from(token[1], "base64"));
-		console.log(data);
-
-		try {
-			if (data) {
-				const { sub, email, picture } = data;
-
-				db.collection("user").findOneAndUpdate(
-					{ sub: sub },
-					{ $setOnInsert: { sub, email, picture } },
-					{ upsert: true, returnOriginal: false },
-					function (err, doc) {
-						if (err) {
-							throw err;
-						}
-						req.session.userId = doc.value._id;
-						req.session.save();
-						res.redirect(302, "/dashboard");
-					}
-				);
-			}
-		} catch (error) {
-			console.log(error);
-			res.redirect(302, "/registration");
-		}
-	});
-
-	app.get("/contact/google", (req, res) => {
-		const oauthClient = new google.auth.OAuth2(
-			"374495845688-8ra0nksfosq5s6p91kj7pe40arass74p.apps.googleusercontent.com",
-			"LSE0vXnUaV7_NjTCjnZ6rXJq",
-			"http://127.0.0.1:3000/contact/google/callback"
-		);
-		const scopes = ["https://www.googleapis.com/auth/contacts.readonly"];
-		const url = oauthClient.generateAuthUrl({
-			access_type: "offline",
-			scope: scopes,
-			state: JSON.stringify({
-				callbackUrl: req.body.callbackUrl,
-				userId: req.body.userid,
-			}),
-		});
-		res.send(url);
-	});
-
-	app.get("/contact/google/callback", async (req, res) => {
-		const code = req.query.code;
-
-		const oauthClient = new google.auth.OAuth2(
-			"374495845688-8ra0nksfosq5s6p91kj7pe40arass74p.apps.googleusercontent.com",
-			"LSE0vXnUaV7_NjTCjnZ6rXJq",
-			"http://127.0.0.1:3000/contact/google/callback"
-		);
-		const { tokens } = await oauthClient.getToken(code);
-
-		try {
-			const { data } = await axios({
-				method: "GET",
-				headers: {
-					authorization: "Bearer " + tokens.access_token,
-				},
-				"Content-Type": "application/json",
-				url: "https://people.googleapis.com/v1/people/me/connections?personFields=names,emailAddresses,photos",
-			});
-
-			if (data) {
-				const { connections } = data;
-				db.collection("user").updateOne(
-					{ _id: new ObjectId(req.session.userId) },
-					{ $set: { connections } },
-					function (err, res) {
-						if (err) {
-							throw err;
-						}
-						console.log(res.modifiedCount);
-					}
-				);
-				res.redirect("/dashboard");
-			} else {
-				console.log("No connections found.");
-			}
-		} catch (error) {
-			console.log(error);
-		}
-	});
-
-	app.get("/userInfo", (req, res) => {
-		db.collection("user")
-			.findOne(
-				{ _id: new ObjectId(req.session.userId) },
-				{ projection: { _id: 0, googleId: 0, hash: 0 } }
-			)
-			.then((result) => {
-				res.send(result);
-			});
-	});
-
 	app.post("/create-checkout-session", async (req, res) => {
 		const session = await stripe.checkout.sessions.create({
 			payment_method_types: ["card"],
@@ -330,6 +200,11 @@ module.exports = function (app, db) {
 		});
 		res.json({ id: session.id });
 	});
+	
+	app.get("/order/success", (req, res) => {
+		console.log(req.params)
+		res.redirect("http://localhost:3000/order/success")
+	})
 	
 	app.post('/webhook', express.raw({type: 'application/json'}), (req, res) => {
 		const sig = req.headers['stripe-signature'];

@@ -23,6 +23,7 @@
     "mongodb": "^3.6.9",
     "npm": "^7.15.0",
     "react": "^16.13.1",
+    "react-addons-update": "^15.6.3",
     "react-dom": "^16.13.1",
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",

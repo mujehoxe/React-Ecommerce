@@ -22,7 +22,7 @@ const Search = ({ handleSearch, location }) => {
 		.join('&');
 	}
 	
-	useConstructor(async() => {
+	useConstructor(() => {
 		const params = new URLSearchParams(location.search)
 
 		if(params.has("text")) setText(params.get("text"))

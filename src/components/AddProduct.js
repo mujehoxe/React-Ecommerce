@@ -6,10 +6,9 @@ import axios from 'axios';
 const initState = {
   name: "",
   price: "",
-  stock: "",
+  stock: 0,
   type: "",
-  brand: "",
-  description: ""
+  image: "",
 };
 
 class AddProduct extends Component {
@@ -20,12 +19,12 @@ class AddProduct extends Component {
 
   save = async (e) => {
     e.preventDefault();
-    const { name, price, stock, type, brand, description } = this.state;
+    const { name, price, stock, type, image } = this.state;
 
     if (name && price) {
       const { user } = this.props.context;
 
-      const product = { name, price, stock, type, brand, description }
+      const product = { name, price, stock, type, image }
       await axios.post(
         'http://localhost:3001/products',
         {product}, {
@@ -39,10 +38,9 @@ class AddProduct extends Component {
         {
           name,
           price,
-          stock: stock || 0,
+          stock: parseInt(stock) || 0,
           type,
-          brand,
-          description,
+          image
         },
         () => this.setState(initState)
       );
@@ -60,7 +58,7 @@ class AddProduct extends Component {
   handleChange = e => this.setState({ [e.target.name]: e.target.value, error: "" });
 
   render() {
-    const { name, price, stock, type, brand, description } = this.state;
+    const { name, price, stock, type, image } = this.state;
     const { user } = this.props.context;
 
     return !(user && user.accessLevel < 1) ? (
@@ -109,7 +107,7 @@ class AddProduct extends Component {
                   onChange={this.handleChange}
                 />
               </div>
-              <div className="type">
+              <div className="field">
                 <label className="label">Type: </label>
                 <input
                   className="input"
@@ -119,25 +117,13 @@ class AddProduct extends Component {
                   onChange={this.handleChange}
                 />
               </div>
-              <div className="brand">
-                <label className="label">Brand: </label>
+              <div className="field">
+                <label className="label">Image Link: </label>
                 <input
                   className="input"
                   type="text"
-                  name="brand"
-                  value={brand}
-                  onChange={this.handleChange}
-                />
-              </div>
-              <div className="field">
-                <label className="label">Description: </label>
-                <textarea
-                  className="textarea"
-                  type="text"
-                  rows="2"
-                  style={{ resize: "none" }}
-                  name="description"
-                  value={description}
+                  name="image"
+                  value={image}
                   onChange={this.handleChange}
                 />
               </div>
